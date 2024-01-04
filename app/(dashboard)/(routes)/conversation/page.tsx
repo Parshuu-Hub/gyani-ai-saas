@@ -121,7 +121,7 @@ const ConversationPage = () => {
                     ? "bg-white border border-black/10"
                     : "bg-muted"
                 )}
-                key={message.role}
+                key={message.content}
               >
                 {message.role === "user" ? <UserAvatar /> : <BotAvatar />}
                 <p className="text-sm">{message.content}</p>
